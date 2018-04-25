@@ -16,11 +16,20 @@
 3. copy the contents of Vagrantfile into your own Vagrantfile
 4. vagrant up 
 5. vagrant ssh
-6. Steebot dev environment should now be up and running.
+6. Steebot dev environment should now be up and running
 
 ## Instructions
 
+
 Your folder that contains `Vagrantfile` in the host machine will automatically be mounted as a shared folder in the linux guest, so remember to clone your working steebot repository into that folder in order to access everything from within the machine.
+
+You may need to add the following lines below into your Vagrantfile
+
+```
+config.vm.provider "virtualbox" do |v|
+  v.customize [ "modifyvm", :id, "--uartmode1", "disconnected" ]
+end
+```
 
 ### Configuration
 1. Add a folder named config under `steebot/config/`. 
