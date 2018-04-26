@@ -23,7 +23,7 @@
 
 Your folder that contains `Vagrantfile` in the host machine will automatically be mounted as a shared folder in the linux guest, so remember to clone your working steebot repository into that folder in order to access everything from within the machine.
 
-You may need to add the following lines below into your Vagrantfile
+You may need to add the following lines below into your Vagrantfile on Windows hosts if you get an error.
 
 ```
 config.vm.provider "virtualbox" do |v|
