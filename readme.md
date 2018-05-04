@@ -1,6 +1,6 @@
 # steebox information
 ## Included components
-*  Python 3.5.x
+*  Python 3.5
 *  pip
 *  discord.py (Rapptz)
 *  BeautifulSoup (bs4)
@@ -37,7 +37,7 @@ Additionally, if you wish to have your shared folder in the home screen when you
 config.vm.synced_folder "../<folder_name>", "/home/vagrant/vagrant"
 ```
 
-Where <folder_name> is replaced with the folder that contains Steebot. If the Vagrantfile is in the folder Steebot is in, all you need to type is "." for the folder name.
+Where `<folder_name>` is replaced with the folder that contains Steebot. If the Vagrantfile is in the folder Steebot is in, all you need to type is `"."` for the folder name.
 
 ### Configuration
 1. Add a folder named config under `steebot/config/`. 
